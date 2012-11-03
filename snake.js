@@ -140,9 +140,6 @@ function Snake(x, y, d, len, color) {
         return collides;
     };
 
-    function () {
-    }
-
     this.out_of_bounds = function (width, height) {
         var p, i, out = false;
 
