@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake!</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jcanvas.min.js"></script>
+<script type="text/javascript" src="snake.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#start a").click(function (e) {
+            e.preventDefault();
+            $("#container").append("<canvas id='game'></canvas>");
+            $("#start").hide();
+            $(document.body).keydown(function (e) {
+                game.input(e.keyCode);
+            });
+
+            // fullscreen! (maybe)
+            var width = $("body").width();
+            var height = $("body").height();
+
+            game.init(width, height, 8);
+            game.start();
+        });
+    });
+</script>
+<style type="text/css">
+body {
+    background: #000;
+    color: #fff;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    margin: 0 auto;
+    padding-top: 20%;
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="start">
+        <a href="#">Start game!</a>
+        <div>play with the arrow keys and wasd</div>
+    </div>
+</div>
+</body>
+</html>
