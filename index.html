@@ -12,13 +12,14 @@
             e.preventDefault();
             $("#container").append("<canvas id='game'></canvas>");
             $("#start").hide();
+
             $(document.body).keydown(function (e) {
                 game.input(e.keyCode);
             });
 
             // fullscreen! (maybe)
-            var width = $("body").width();
-            var height = $("body").height();
+            var width = $(document).width();
+            var height = $(document).height();
 
             game.init(width, height, 8);
             game.start();
