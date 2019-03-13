@@ -11,4 +11,6 @@ You can control two snakes at once, one with WASD, the other one with the arrow 
 online
 ------
 
-You can play online here: <http://kaeru.neritic.net/projects/snake/>
+You can play online here: <https://andres.villarreal.co.cr/showcase/snake>
+
+<img src="https://andres.villarreal.co.cr/img/snake.png"/>
