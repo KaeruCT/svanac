@@ -1,4 +1,4 @@
-savnac
+svanac
 ======
 
 Snake game in JavaScript, using canvas to render.
