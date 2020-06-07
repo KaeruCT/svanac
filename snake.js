@@ -393,15 +393,6 @@ var game = {
         var i;
 
         game.canvas.clearCanvas();
-        game.canvas.drawRect({
-            strokeStyle: "#aaa",
-            strokewidth: 1,
-            x: 0,
-            y: 1,
-            width: game.width * game.canvas.zoom,
-            height: (game.width * game.canvas.zoom) - 1,
-            fromCenter: false
-        });
 
         if (!game.stopped) {
             for (i = 0; i < game.food.length; i += 1) {

@@ -15,6 +15,7 @@
 
             $(document.body).keydown(function (e) {
                 game.input(e.keyCode);
+                e.preventDefault();
             });
 
             // fullscreen! (maybe)
